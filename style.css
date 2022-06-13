@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --yellow: #FFA92B;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    width: 100%;
+    padding: 0px 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+nav .brand {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+nav .brand span {
+    color: black;
+    margin-right: 50px;
+}
+
+.nav-items {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px;
+}
+
+#login {
+    margin-left: auto;
+    color: white;
+    background-color: var(--yellow);
+    padding: 10px 20px;
+    color: white;
+}
+
+#login a {
+    color: white;
+    padding: 0px;
+}
+
+.hero {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero .left {
+    width: 50%;
+}
+
+.hero .right {
+    width: 50%;
+    background-image: url("taiwo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero .left h6 {
+    font-weight: 200;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.hero .left h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+} 
+
+.hero .left span {
+    color: var(--yellow);
+    font-weight: 700;
+}
+
+.hero .left p {
+    font-size: 24px;
+}
+
+.hero .left a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--yellow);
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+main section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main section li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+main h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+main section .priorities {
+    background-color: var(--yellow);
+}
+
+.priorities h2 {
+    color: white;
+}
+
+section div {
+    padding: 20px 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+footer .btn a{
+    display: inline-block;
+    padding: 20px 40px;
+    font-weight: 700;
+    font-size: 24px;  
+    background-color: var(--yellow);
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .social i {
+    color: white;
+}
+
+/* registeration */
+
+.registration {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    align-self: center;
+}
+
+.registration .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.registration .card h2 {
+    color: var(--yellow);
+    font-size: 20px;
+}
+
+.registration .card form {
+    width: 100%;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: rgba(209, 209, 209, 0.31);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    width: 100%;
+}
+
+.registration .card h5 {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.registration .card input[type=submit] {
+    padding: 15px;
+    margin-top: 15px;
+    background-color: var(--yellow);
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.login {
+    margin-top: 200px;
+    width: 300px;
+    align-self: center;
+
+}
+
+.login .card h2 {
+    font-size: 20px;
+    text-align: center;
+    color: var(--yellow);
+}
+
+.login .card h5 {
+    font-size: 18px;
+
+}
+
+.login .card input[type=submit] {
+    background-color: var(--yellow);
+    color: white;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+textarea {
+    width: 100%;
+    background-color: rgba(130, 128, 128, 0.12);
+    outline: none;
+    border: none;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+a:hover {
+    border-bottom: 2px solid var(--yellow);
+}
